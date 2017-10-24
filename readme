@@ -1,0 +1,9 @@
+server参数为IP,端口,线程数量,最大等待用户
+client参数为IP,端口
+帐号验证与数据库相连,参数在mysql.c,表的创建为:
+create table user(id int not null auto_increment,name varchar[15] not null,salt varchar[11] not null,password varchar[128] not null,primary key(id,name));
+
+历史记录在server/src/.server_history
+
+							 李云龙
+							20171020
